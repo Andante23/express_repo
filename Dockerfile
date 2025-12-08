@@ -4,7 +4,7 @@ FROM node:18-alpine
 WORKDIR /usr/src/project
 
 # Express 설치 및 기본 서버 파일 생성
-RUN npm init -y && npm install express
+RUN npm init -y && npm install express dotenv
 
 # 기본 서버 파일 복사
 COPY server.js .
