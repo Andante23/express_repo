@@ -35,3 +35,4 @@ app.get(`${API_PATH}`, (req, res) => {
 app.listen(PORT, () => {
   console.log(`Server is running on http://localhost:${PORT}`);
 });
+
