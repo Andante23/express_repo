@@ -1,8 +1,15 @@
 {
+  "name": "my-app",
+  "version": "1.0.0",
+  "type": "module",
   "dependencies": {
     "dotenv": "^17.2.3",
-    "express": "^5.2.1",
-    "nodemon": "^3.1.11",
-    "path": "^0.12.7"
+    "express": "^4.22.1",
+    "nodemon": "^3.1.11"
+  },
+  "scripts": {
+    "dev": "nodemon server.js",
+    "wbuild": "rmdir /S /Q dist & mkdir dist & xcopy server.js dist /Y & xcopy public dist\\public /E /I & xcopy view dist\\view /E /I & xcopy webpage dist\\webpage /E /I",
+    "build": "rm -rf dist && mkdir dist && cp server.js dist/ && cp -r public dist/ && cp -r view dist/ && cp -r webpage dist/"
   }
 }
