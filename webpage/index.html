@@ -4,16 +4,21 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="../public/styles/welcome.css">
+    <link rel="stylesheet" href="/styles/welcome.css">
 </head>
 <body>
     <h1>Welcome to the Webpage</h1>   
     
-    <form action="/create" method="post">
-        <input type="text" name="text" id="text">
-
-        <button type="submit" formaction="/create">Create New Item</button>
-        <button type="submit" formaction="/list">View Item List</button>
+    <form action="/login" method="post">
+        <input type="text" name="username" id="username" placeholder="아이디"> <br>
+        <input type="password" name="password" id="password"    placeholder="비밀번호"  >
+      <div>
+       <button type="submit" >로그인</button>
+      </div>
     </form>
+
+    <p>
+      <a href="/signup">회원가입</a>
+    </p>
 </body>
 </html>
